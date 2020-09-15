@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formatting tests</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            border: 1px solid black;
+            background-color: cadetblue;
+            width: 90%;
+            height: 150px;
+            margin-right: auto;
+            margin-left: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            color: darkblue;
+            text-align:center;
+            padding: 70px;
+        }
+
+        .row {
+            width: 100%;
+        }
+
+        @media (min-width: 1200px) {
+            .col-lg {
+                float: left;
+                border: 1px solid green;
+                width: 25%;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .col-md {
+                float: left;
+                border: 1px solid red;
+                width: 50%;
+            }
+        }
+
+        #container {
+            position: relative;
+        }
+
+        #box {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            padding: 0px;
+            margin: 0px;
+            top: 0px;
+            right: 41px
+            ;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a test for formatting</h1>
+    <div class="row">
+        <div class="col-lg col-md" id="container">
+            <p>Item 1</p>
+            <p id="box">box</p>
+        </div>
+        <div class="col-lg col-md"><p>Item 2</p></div>
+        <div class="col-lg col-md"><p>Item 3</p></div>
+        <div class="col-lg col-md"><p>Item 4</p></div>
+        <div class="col-lg col-md"><p>Item 5</p></div>
+        <div class="col-lg col-md"><p>Item 6</p></div>
+        <div class="col-lg col-md"><p>Item 7</p></div>
+        <div class="col-lg col-md"><p>Item 8</p></div>
+    </div>
+
+</body>
+</html>
